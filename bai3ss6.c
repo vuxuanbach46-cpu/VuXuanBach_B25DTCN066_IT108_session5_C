@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 int main (){
-	int N , i = 1 , tong = 0;
-	printf ("nhap mot so nguyen duong bat ky :");
-	scanf ("%d",&N);
-	while (i<=N ){
-		tong +=i ;
-		i++;
-	}
-	printf ("tong = %d",tong);
-	
-	
-	
-	return 0;
+	double diemTb ;
+	printf ("nhap diem trung binh :");
+	scanf ("%lf",&diemTb);
+	if (diemTb>=8)
+	printf ("Hoc luc gioi ");
+	else if (diemTb>=6.5)
+	printf ("Hoc luc kha ");
+	else if (diemTb>=5)
+	printf ("Hoc luc trung binh ");
+	else 
+	printf ("Hoc luc yeu ");
+	return 0 ;
 }
