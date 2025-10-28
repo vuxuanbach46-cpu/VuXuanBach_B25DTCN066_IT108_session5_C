@@ -6,6 +6,10 @@ int main (){
 	
 	printf ("Nhap so dien :");
 	scanf ("%d",&soDien);
+	if (soDien < 0) {
+        printf("Loi: So dien khong duoc am!\n");
+        return 0;
+}
 	printf ("Loai ho gia dinh :\n");
 	printf ("1 : Ho gia dinh \n");
 	printf ("2 : Ho kinh doanh \n");
@@ -33,7 +37,8 @@ int main (){
 	        phuPhi = tienBacThang * 0.08 ;
 	    break ;
 	default :
-		printf ("Khong hop le !!");
+		printf ("Nhap loai ho gia dinh sai !!");
+		return 0 ;
 	}
 	
 	tienDien = tienBacThang + phuPhi ;
@@ -42,3 +47,4 @@ int main (){
 	
 	return 0 ;
 }
+
