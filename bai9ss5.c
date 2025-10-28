@@ -5,14 +5,29 @@ int main (){
 	int ngayCong , chucVu ;
 	printf ("Nhap he so luong :");
 	scanf ("%f",&hsLuong);
+	if(hsLuong<=0){
+		printf ("Loi he so luong !!");
+		return 0 ;
+	}
 	printf ("Nhap so ngay cong :");
 	scanf ("%d",&ngayCong);
+	if(ngayCong<=0){
+		printf ("Loi ngay cong !!");
+		return 0 ;
+	}
 	printf ("Chuc vu \n");
 	printf ("1 : Nhan vien\n");
 	printf ("2 : To truong \n");
 	printf ("3 : Quan ly \n");
 	printf ("Nhap chuc vu 1 , 2 hoac 3 :");
 	scanf ("%d",&chucVu);
+	
+
+		if(ngayCong<=0){
+		printf ("Loi ngay cong !!");
+		return 0 ;
+	}
+	
 	
 	switch (chucVu){
 		case 1 :
@@ -25,7 +40,8 @@ int main (){
 			phuCap = 2000000 ;
 			break ;
 	    default :
-	    	printf ("Khong hop le !!");
+	    	printf ("Loi chuc vu !!");
+	    return 0;
 	}
 	
 	if (ngayCong > 26){
