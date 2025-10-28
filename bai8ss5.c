@@ -6,6 +6,10 @@ int main (){
 	printf ("Nhap so nuoc tieu thu trong thang :");
 	scanf ("%d",&tieuThu);
 	
+	 if (tieuThu < 0) {
+        printf("Loi: So nuoc khong hop le! Vui long nhap lai .\n");
+        return 0;
+}
 	if (tieuThu <= 10){
 		tien = tieuThu * 6000 ;
 	}else if (tieuThu <= 20){
