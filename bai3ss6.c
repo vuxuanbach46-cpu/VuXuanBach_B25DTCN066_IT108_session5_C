@@ -4,6 +4,11 @@ int main (){
 	double diemTb ;
 	printf ("nhap diem trung binh :");
 	scanf ("%lf",&diemTb);
+	
+	if (diemTb<=0 || diemTb>10){
+		printf ("Diem khong hop le !!");
+		return 0 ;
+	}
 	if (diemTb>=8)
 	printf ("Hoc luc gioi ");
 	else if (diemTb>=6.5)
