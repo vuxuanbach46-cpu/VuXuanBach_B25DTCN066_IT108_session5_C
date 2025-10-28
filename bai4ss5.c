@@ -5,6 +5,11 @@ int main (){
 	double thue ;
 	printf ("So tien :");
 	scanf("%d",&thuNhap);
+	
+	if (thuNhap <= 0){
+	printf ("So tien nhap khong hop le ");
+	return 0 ;
+}
 	if (thuNhap<=5) 
 		thue = thuNhap*0.05;
 	else if (thuNhap>5&&thuNhap<=10)
